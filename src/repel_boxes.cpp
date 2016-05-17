@@ -3,6 +3,20 @@ using namespace Rcpp;
 
 // Exported convenience functions ---------------------------------------------
 
+
+
+//' Vector of random numbers.
+//' @param lng Length of a vector of random numbers.
+//' @noRd
+// [[Rcpp::export]]
+NumericVector testRandom(double a) {
+  NumericVector r = rnorm(a, 0, 1);
+  return r;
+}
+
+
+
+
 //' Euclidean distance between two points.
 //' @param a A numeric vector.
 //' @param b A numeric vector.
