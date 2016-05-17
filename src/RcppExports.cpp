@@ -5,17 +5,6 @@
 
 using namespace Rcpp;
 
-// testRandom
-NumericVector testRandom(double a);
-RcppExport SEXP ggrepel_testRandom(SEXP aSEXP) {
-BEGIN_RCPP
-    Rcpp::RObject __result;
-    Rcpp::RNGScope __rngScope;
-    Rcpp::traits::input_parameter< double >::type a(aSEXP);
-    __result = Rcpp::wrap(testRandom(a));
-    return __result;
-END_RCPP
-}
 // euclid
 double euclid(NumericVector a, NumericVector b);
 RcppExport SEXP ggrepel_euclid(SEXP aSEXP, SEXP bSEXP) {

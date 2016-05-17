@@ -56,13 +56,6 @@ NULL
 #' @noRd
 NULL
 
-#' Vector of random numbers.
-#' @param lng Length of a vector of random numbers.
-#' @noRd
-testRandom <- function(a) {
-    .Call('ggrepel_testRandom', PACKAGE = 'ggrepel', a)
-}
-
 #' Euclidean distance between two points.
 #' @param a A numeric vector.
 #' @param b A numeric vector.
