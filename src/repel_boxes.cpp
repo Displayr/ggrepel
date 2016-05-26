@@ -269,7 +269,9 @@ DataFrame repel_boxes(
   ybounds.y = ylim[1];
 
   // Add a tiny bit of jitter to each box at the start.
+  GetRNGstate();
   NumericVector r = rnorm(n, 0, force);
+  PutRNGstate();
   std::vector<Box> Boxes(n);
   std::vector<Box> DataBoxes(n);
   std::vector<double> ratios(n);
