@@ -10,8 +10,7 @@ pkgs.rPackages.buildRPackage {
     points.'';
   propagatedBuildInputs = with pkgs.rPackages; [ 
     scales
-    ggplot2
     Rcpp
- ];
-
+    ggplot2
+  ];
 }
