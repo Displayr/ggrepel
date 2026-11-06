@@ -3,3 +3,5 @@
 ^vignettes/cache/.*$
 ^.travis\.yml$
 ^tests/benchmark\.R$
+^AGENTS\.md$
+^CLAUDE\.md$
